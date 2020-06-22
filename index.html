@@ -1,0 +1,132 @@
+<style>
+  
+    body{
+      background-image:linear-gradient(#ffffff, #6c726f);
+      width: 100%;
+      height: 100%;
+    }
+    
+    #title{
+      text-align: center;
+    }
+    
+    #description{
+      text-align: center;
+      
+    }
+
+    #survey-form{
+        border: thick double #ac1ffd;
+        border-width: 4px;
+        border-radius: 0.2rem; 
+        margin: auto; 
+        width: auto;
+        text-align: center;                            
+        
+    }
+
+    .container {
+        
+        margin: auto;
+        width: 100%;
+        clear: both;
+          
+        
+    }
+
+    .container input {
+        display: inline-block;
+        width: auto;
+        margin: 5px;
+        clear: both;
+    }
+
+    
+    
+  </style>
+
+<head>
+
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    
+      
+      <h1 id="title">Welcome to Survey</h1>
+      
+      <p id="description">Hello there, welcome to Team Aris simple survey page. Please take a short time to participate in quick survey.</p>
+      
+      
+      <form id="survey-form" action="" method="get">
+                <div class="container">
+                <label for="name" id="name-label">Please input your name:</label>
+                <input type="text" id="name" name="name" required placeholder="insert name here">
+                </div>
+
+                <div class="container">            
+                <label for="email" id="email-label">Please input your email:</label>
+                <input type="email" id="email" name="email" required placeholder="insert email here">
+                </div>
+                
+                <div class="container">
+                <label for="number" id="number-label">Happiness number today:</label>
+                <input type="number" id="number" name="number" required min="1" max="10" placeholder="1-10">
+                </div>
+                 
+                <div class="container">
+                <label for="dropdown">Favorite RGB Color:</label>
+                <select id="dropdown">
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                </select>
+                </div>
+                   
+                <div class="container">
+                <label>Please select your Gender:</label>
+                <label> <input type="radio" id="male" value="male" name="gender" checked/>
+                Male</label>
+                <input type="radio" id="female" value="female" name="gender">
+                <label for="female">Female</label>
+                </div>
+
+                <div class="container">
+                    <label>What's your hobbies:</label>
+
+                    <input type="checkbox" value="Swim" name="hobby" checked>
+                        <label for="Swim">Swim</label>
+                    <input type="checkbox" value="Piano" name="hobby">
+                        <label for="Piano">Piano</label>
+                    <input type="checkbox" value="Gaming" name="hobby">
+                        <label for="Gaming">Gaming</label>
+                </div>
+
+                <div class="container">
+                    <label for="comment">Any additional comment:</label>
+                    <textarea 
+                        id="comment" 
+                        name="comment" 
+                        placeholder="Input are optional"
+                    >
+                    </textarea>
+
+
+                </div>
+
+
+
+
+                </div>
+                
+            
+                
+            <input type="submit" id="submit" value="Submit">
+            
+                
+
+        
+      </form>
+      
+</body>
