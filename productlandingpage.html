@@ -3,35 +3,205 @@
 <style>
     body{
         background-color: lightgray;
+        padding-top: 60px;
+        
     }
 
-    nav-bar{
+    nav{
+        display:flex;
+        justify-content: center;
         width: 100%;
+        background-color:rgb(178, 247, 195);
+        position: fixed;
+        top:0;
     }
 
-    .nav li{
-        display: inline;
+    nav ul{
+        display: flex;
+        /*flex-direction: column;*/
+        
+    }
+
+    nav li{
+        display: block;
+        list-style-type: none;
+        font-size: 2vh;
+        padding: 5px;
+        
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        padding: 1vw;
+    }
+
+    a:hover {
+        background-color:rgb(82, 151, 99);
+        color: white;
+    }
+
+    div{
+        text-align: center;
+    }
+
+    @media (max-width: 500px)
+    {
+        flex-direction: columns;
+    }
+    
+    .container{
+        display: flex;
+        justify-content: center;
+        /*border: 1px solid;*/
+        width: auto;
+        
+                
+    }
+
+    .productcard{
+        /*padding:5em;*/
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        border: 1px solid;        
+        margin: 20px;   
+                
+    }
+
+    .productcard h1{
+        background-color: rgb(131, 222, 245);
+        
+    }
+
+    .productcard ul
+    {
+        list-style: none;
+        /*display: flex;
+        flex-direction: column;*/
+        width: auto;
+        padding: 10px 10px;
+        
+        /*margin-right: 1px;*/
+        margin-bottom:auto;
+        
+
+       /*border:1px solid;*/
+        
+    }
+
+    .productcard li
+    {
+        width: auto;
+        padding: 10px 10px;
+        border-bottom: 1px solid gray;
+        
+    }
+
+    .productcard button{
+        font-size: 2vw;
+    }
+
+    .tiername
+    {
+        /*width: 100%;*/
+        text-transform: uppercase;
+        font-size: 2vw;
+        background-color:slategrey;
+        padding: 15px;
     }
 </style>
 
-<header id="header">
-    <img id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaQdulE5ahi6SvNZ2f6dS0-MHY1A0hDGsoqz1vrWxBtERWRrfq&usqp=CAU">
+<header id="header">    
 
-    <nav id="nav-bar" navbar-inverse>
-        <a href="#">Yu EYGBITZA</a>
+    <nav id="nav-bar">
+        <img id="header-img" 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaQdulE5ahi6SvNZ2f6dS0-MHY1A0hDGsoqz1vrWxBtERWRrfq&usqp=CAU"
+            width="30px">
+        <a href="#">Instapic</a>
 
         <ul>
-            <li class="nav-link"><a href="#">Home</a></li>
-            <li class="nav-link"><a href="#">Page 1</a></li>
-            <li class="nav-link"><a href="#">Page 2</a></li>
-            <li class="nav-link"><a href="#">Page 3</a></li>
-          </ul>
+            <li><a class="nav-link" href="#header">Home</a></li>
+            <li><a class="nav-link" href="#email">Register email</a></li>
+            <li><a class="nav-link" href="#video">How it Works</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing Tier</a></li>
+        </ul>
     </nav>
 
 </header>
 
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <form id="form" method="GET" action="https://www.freecodecamp.com/email-submit">
+        
+        <div>
+            <label for="email">Insert Email Here:</label>
+            <input type="email" id="email" name="email" placeholder="yourmail@address.com" required>
+        </div>
+
+        <div>
+            <input type="submit" id="submit" value="submit">
+        </div>
+
+        <div>
+            <iframe 
+                id="video"
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/UMU0htfVVIM" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+            picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+
+        <div id="pricing" class="container">
+            
+            <div class="productcard">
+                <div class="tiername">Free</div>
+            <ul>
+            <li>1gb mail</li>
+            <li>domain name</li>
+            <li>antivirus</li>
+            
+            </ul>
+
+            <button>$0</button>
+            </div>
+
+            <div class="productcard">
+            <div class="tiername">Pro</div>
+            <ul>
+                <li>10gb mail</li>
+                <li>domain name</li>
+                <li>antivirus</li>
+                <li>Chat support</li>
+                <li>Diagnostic</li>
+                
+            </ul>
+                <button>$10</button>
+            </div>
+
+            <div class="productcard">
+            <div class="tiername">Premium</div>
+            <ul>
+                <li>100gb mail</li>
+                <li>2 domain name</li>
+                <li>antivirus</li>
+                <li>Chat support</li>
+                <li>Diagnostic</li>
+                <li>Exclusive Offer</li>
+                
+            </ul>
+                <button>$20</button>
+
+            </div>
+
+        </div>
+
+
+    </form>
 
 
 </body>
