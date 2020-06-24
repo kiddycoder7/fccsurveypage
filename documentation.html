@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<style>
+
+    html
+    {
+        /*display: block;*/
+        background:linear-gradient(rgba(71, 71, 71, 0.5),rgba(31, 29, 29, 0.5)),     
+                    url(https://i.redd.it/ca2kalp8sks41.jpg);
+        /*background-image: url(https://i.redd.it/ca2kalp8sks41.jpg);*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+        scroll-behavior: smooth;
+        
+    }
+
+    body{
+        
+        display: flex;
+        
+        
+        
+    }
+
+    .navbar
+    {
+        /*border: 2px solid red;*/
+        position: sticky;
+        top: 0;
+        
+        
+        
+        
+    }
+
+    nav ul
+    {
+        
+        list-style: none;
+        /*border: 1px solid blue;*/
+        margin: 0;
+        padding: 0;
+                
+    }
+
+    nav li
+    {
+        
+        padding: 5%;
+        border-bottom: 1px solid black;
+        
+    }
+
+    nav li:hover
+    {
+        background-color: rgb(36, 36, 36);
+        
+    }
+
+    .buylist li
+    {
+        margin: 15px;
+    }
+
+    nav a
+    {
+        display: block;
+        width: auto;
+        text-decoration: none;
+        color: orange;
+        font-size: 1vw 1vh;        
+        padding-right: 1rem;
+        text-align: left;
+        
+    }
+
+    nav a:hover
+    {
+        
+        color: rgb(255, 196, 0);
+    }
+
+    main
+    {
+        width: 100%;
+        /*border: 1px solid red;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+    }
+
+    .main-section h1
+    {
+        color: white;
+        border-bottom: 2px solid white;
+        width: auto;
+        text-align: center;
+    }
+
+    .main-section
+    {
+        color: white;
+        font-weight:800;
+    }
+
+    code 
+    {
+        /*display: block;
+        text-align: left;
+        white-space: pre;
+        position: relative;
+        word-break: normal;
+        word-wrap: normal;
+        line-height: 2;*/
+        background-color: snow;
+        padding: 5px;
+        /*margin: 10px;*/
+        border-radius: 5px;
+        color: orange;
+    }
+
+    @media only screen and (max-width: 768px) 
+    {
+  /* For mobile phones: */
+    width: 100%;
+  }
+    
+
+</style>
+
+<head>
+    <title>Documentation</title>
+</head>
+
+
+<header>
+        <nav class="navbar" id="navbar">
+
+            <header>
+                <h3 style="color: orange">CSGO Documentation</h3>
+            </header>
+
+            <ul>
+                <li><a class="nav-link" href="#introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#maps">Maps</a></li>
+                <li><a class="nav-link" href="#pistol">Pistol</a></li>
+                <li><a class="nav-link" href="#heavy_weapons">Heavy Weapons</a></li>
+                <li><a class="nav-link" href="#smg">SMG</a></li>
+                <li><a class="nav-link" href="#rifles">Rifles</a></li>
+                <li><a class="nav-link" href="#grenades">Grenades</a></li>
+                
+            </ul>
+        </nav>
+</header>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>
+                <h1>Introduction</h1>
+            </header>
+
+            <div>
+                <p>welcome to csgo documentation page. This page will share information
+                    about common knowledge so you can become better csgo player. Enjoy
+                </p>
+            </div>
+        </section>
+
+        <section class="main-section" id="maps">
+            <header>
+                <h1>Maps</h1>
+            </header>
+
+            <div>
+                <p>There are currently 7 active maps for tournament games:
+                    <ul>
+                        <li>Dust 2</li>
+                        <li>Mirage</li>
+                        <li>Inferno</li>
+                        <li>Overpass</li>
+                        <li>Nuke</li>
+                        <li>Train</li>
+                        <li>Vertigo</li>
+
+                    </ul>
+                </p>
+
+                <p>There are also non-tournament maps available for play:
+                    <ul>
+                        <li>Chlorine</li>
+                        <li>Anubis</li>
+                        <li>Office</li>
+                        <li>Cbblestone</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+
+        <section class="main-section" id="pistol">
+            <header>
+                <h1>Pistol</h1>
+            </header>
+
+            <div>
+
+            <p>CT Default pistol is USP-S/P2000
+                USP-S has few bullets but silent.
+                P2000 has more bullets but higher recoil on long range.
+            </p>
+
+            <p>
+                T always use <em>9mm GLOCK</em> as their default pistol. It has the weakest damage
+                but many bullets, only second to five-seven.
+            </p>
+
+            <p>Purchasable pistol:
+                <ul class="buylist">
+                    <li>
+                        <em>Default Pistol</em>
+                        <code>B-1-1</code>
+                    </li>
+                    <li>
+                        Dual-Beretta
+                        <code>B-1-2</code>
+                    </li>
+                    <li>
+                        P250
+                        <code>B-1-3</code>
+                    </li>
+                    <li>
+                        Five-Seven/Tec9/CZ75
+                        <code>B-1-4</code>
+                    </li>
+                    <li>
+                        Desert Eagle/Revolver
+                        <code>B-1-5</code>
+                    </li>
+                </ul>
+            </p>
+
+            </div>
+        </section>
+
+        <section class="main-section" id="heavy_weapons">
+            <header>
+                <h1>Heavy Weapons</h1>
+            </header>
+
+            <p>Consist of shotgun & Machine guns, high damage but minimal range</p>
+
+            <p>Purchasable weapons:
+                <ul class="buylist">
+                    <li>
+                        Nova
+                        <code>B-2-1</code>
+                    </li>
+                    <li>
+                        Auto Shotgun
+                        <code>B-2-2</code>
+                    </li>
+                    <li>
+                        Mag7/Sawed Off
+                        <code>B-2-3</code>
+                    </li>
+                    <li>
+                        Negev
+                        <code>B-2-4</code>
+                    </li>
+                    <li>
+                        M249
+                        <code>B-2-5</code>
+                    </li>
+                </ul>
+
+            </p>          
+            </section>
+
+        <section class="main-section" id="smg">
+            <header>
+                <h1>SMG</h1>
+            </header>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+             dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </section>
+
+        <section class="main-section" id="rifles">
+            <header>
+                <h1>Rifles</h1>
+            </header>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+             dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </section>
+
+        <section class="main-section" id="grenades">
+            <header>
+                <h1>Grenades</h1>
+            </header>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+             dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </section>
+
+        
+
+    </main>
+</body>
