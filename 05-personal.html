@@ -1,0 +1,373 @@
+<style>
+
+    html
+    {
+        scroll-behavior: smooth;
+        
+    }
+    body
+    {
+        /*border: 1px solid red;*/
+        height: 100%;
+        
+        
+                
+    }
+
+    header
+    {
+        
+    }
+
+    .companylogo
+    {
+        /*border: 1px solid skyblue;*/       
+        color: white; 
+        font-size: 3vw;
+        margin-top: auto;
+    }
+
+    .navbar
+    {
+        
+        width: 100%;
+        position: sticky;        
+        top: 0;        
+        display: flex;
+        justify-content: space-between;
+        background-color: gray;
+        /*border: 1px solid purple;*/
+  
+    }
+
+    .navbar ul
+    {
+        display:flex;
+        margin: 0;
+        
+        
+        /*border: 1px solid red;*/
+    }
+
+    .navbar li
+    {
+        
+        list-style: none;
+        padding: 10px;
+    }
+
+    .navbar li:hover
+    {
+        background-color: rgb(44, 49, 44);
+        
+    }
+
+    .navbar a
+    {
+        
+        text-decoration: none;
+        color: white;
+        font-family: fantasy;
+        font-size: 2vw;
+        text-shadow:2px 2px 1px black;
+    }
+
+    .welcome
+    {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(25deg, rgb(180, 180, 180), rgb(75, 73, 73));
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        
+    }
+
+    .welcome h1
+    {
+        font-size: 3vw;
+        
+    }
+
+    .welcome p
+    {
+        font-size: 2vw;
+        
+    }
+
+    .projects
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        background:radial-gradient(rgb(254, 255, 254), rgb(155, 155, 155));
+        /*padding: 4rem;*/
+        height: 80vh;
+        /*border: 1px solid green;*/
+
+    
+        
+    }
+
+    .projects h1
+    {
+        
+        margin: 0;
+        text-align: center;
+        font-size: 3vw;        
+        /*text-decoration: underline solid black;*/
+        
+        
+    }
+
+    .project-tile
+    {
+        display: flex;
+        /*flex-wrap: wrap;   */     
+        justify-content: center;
+        /*border: 1px solid blue;*/
+    
+    }
+
+    .project-box
+    {
+        margin: 2vw;
+        /*border: 1px solid black;*/
+        display: flex;
+        flex-direction: column;
+        
+        background-color: rgb(139, 139, 139);
+        border-radius: 5px;
+        box-shadow: 2px 2px 6px black;
+
+        transform: scale(1);
+        transition: ease-out 0.1s;
+    }
+
+    .project-box:hover
+    {
+        background-color: rgb(204, 204, 204);
+        transform: scale(1.1);
+        transition: ease-in 0.1s;
+    }
+
+    
+
+    .project-box a
+    {
+        text-decoration: none;
+        color: white;
+    }
+
+    .project-box img
+    {
+        width: 200px;
+    }
+
+    .project-text
+    {
+        font-family: sans-serif;
+        display: block;
+        background-color: rgb(255, 165, 0);
+        padding: 10px;
+        margin: 0;
+    }
+
+    .project-text:hover
+    {
+        background-color: rgb(252, 202, 109);
+    }
+
+
+    .showbutton
+    {
+        margin-bottom: 3rem;
+        color: white;
+        background-color:rgb(187, 57, 57);
+        padding: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 100%;
+        font-family:'Courier New', Courier, monospace;
+        
+        
+    }
+
+    .showbutton:hover
+    {
+        background-color: rgb(99, 25, 25);
+        transition: ease-in 0.4s;
+    }
+
+    .contact
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 2vh;
+        background: linear-gradient(rgb(155,155,155),rgb(230, 230, 230));
+        height: 60vh;
+    }
+
+    .contact h1
+    {
+        margin-bottom: 15rem;
+        text-align: center;
+        font-size: 3vw;
+        
+    }
+
+    .contact img
+    {
+        width: 100px;
+        transform: scale(1);
+        transition:linear 1s;
+        
+    }
+
+    .contact img:hover
+    {
+        transform: scale(1.5);
+        transition:linear 0.3s;
+        
+
+    }
+
+    .profile-container
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+</style>
+
+<head>
+    <title>
+        Personal Page
+    </title>
+</head>
+
+
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+        
+        
+        <nav id="navbar" class="navbar">
+    
+            <div class="companylogo">
+                TeamR
+            </div>
+            
+            <ul>
+                <li><a href="#projects">My Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+    
+    <section id="welcome-section" class="welcome">
+        <div>
+        <h1>Hello, I am kiddycoder</h1>
+        <p>I am learning web development</p>
+        </div>
+
+        <div>
+            <iframe width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/oEyRv0k-b5w" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+
+    </section>
+
+    <section id="projects" class="projects">
+        <h1>Completed personal projects:</h1>
+
+        <div class="project-tile">
+            <div class="project-box">
+                <a href="https://github.com/kiddycoder7/fccsurveypage/blob/master/index.html"
+                    target="_blank"
+                >
+                <img src="https://icons.iconarchive.com/icons/custom-icon-design/mono-general-3/512/twitter-icon.png"
+            >   
+
+                <p class="project-text">Survey Page</p>
+                </a>
+            </div>
+
+            <div class="project-box">
+
+                
+                    <a href="https://github.com/kiddycoder7/fccsurveypage/blob/master/productlandingpage.html"
+                        target="_blank"
+                        >
+                        <img src="https://icons.iconarchive.com/icons/custom-icon-design/mono-general-3/512/twitter-icon.png"
+                        >  
+
+                        <p class="project-text">Product Landing Page</p>
+                    </a>
+                
+            </div>
+
+            <div class="project-box">
+
+                <a href="https://github.com/kiddycoder7/fccsurveypage/blob/master/documentation.html"
+                        target="_blank"
+                        >
+                        <img src="https://icons.iconarchive.com/icons/custom-icon-design/mono-general-3/512/twitter-icon.png"
+                        >
+
+                        <p class="project-text"> Documentation Page</p>
+                </a>
+            </div>
+                
+        </div>
+
+        <a href="https://github.com/kiddycoder7/fccsurveypage"
+            target="_blank"
+            class="showbutton"
+            id="profile-link"
+            >        
+            Show All
+        </a>
+
+    </section>
+
+    <section id="contact" class="contact">
+        <h1>contact me</h1>
+
+        <div class="profile-container">
+            <a href="https://github.com/kiddycoder7" target="_blank">
+                <img src="https://pngimg.com/uploads/github/github_PNG20.png" 
+                        alt="github logo">
+
+            </a>
+
+            <a href="https://www.freecodecamp.org/kiddycoder" target="_blank">
+                <img src="https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.svg"
+                        alt="freecodecamp logo">
+
+            </a>
+        </div>
+
+
+    </section>
+
+    
+
+    <footer style="text-align: center;">
+        Copyright 2020
+    </footer>
+
+
+
+</body>
+
